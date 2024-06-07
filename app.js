@@ -21,6 +21,9 @@ const {john , peter} = require('./4-exportData') // object destructuring, shorte
 
 const sayHi = require('./5-exportFunc') // importing the name vars
 
+const data = require('./6-altExports')
+
+console.log(data)
 
 sayHi('susan')
 sayHi(john)

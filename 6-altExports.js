@@ -6,4 +6,4 @@ const person = {
     name : 'bob',
 }
 
-module.exports.singlePerson = person // creates an attribute called 'singlePerson' that contains an object named 'person' with a key named 'name'
+module.exports.singlePerson = person // creates an attribute called 'singlePerson' that contains an object with a key named 'name'
