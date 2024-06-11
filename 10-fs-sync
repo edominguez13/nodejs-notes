@@ -31,3 +31,6 @@ writeFileSync(
 // if the file doesnt exist, node will create it.
 
 // if we want to append we have to add a flag.
+
+// The problem with this code is that if we have more than one user that want to read files, we will not be able to serve other users until the task of the first user are not
+// This is why sync code is stopping code
