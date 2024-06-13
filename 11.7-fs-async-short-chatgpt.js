@@ -1,4 +1,3 @@
-const { readFile, writeFile } = require('fs').promises;
 
 /*
 The .promises property in the fs module of Node.js provides promise-based versions of the standard file system methods.
@@ -16,15 +15,17 @@ allowing you to use them with await inside an async function.
 
 
 */
+const { readFile, writeFile } = require('fs').promises;
 
 
 console.log('start tasks'); // testing
 
-async function processFiles() {
+// async function processFiles() {
+const processFiles = async () => {
     try {
         const first = await readFile('./content/first.txt', 'utf8');
         const second = await readFile('./content/second.txt', 'utf8');
-        await writeFile('./content/result-async.txt', `Here is the result: ${first}, ${second}`);
+        await writeFile('./content/result-async.txt', `Here is the result fff: ${first}, ${second}`);
         console.log('done all tasks'); // testing
     } catch (err) {
         console.log(err);
